@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment - Responsive Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 1em;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .container {
+            max-width: 960px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+        }
+        .column {
+            flex-basis: 20%;
+            box-sizing: border-box;
+            padding: 8px;
+        }
+
+        .box {
+            position: relative;
+            height: 144px;
+            background-color: darkmagenta;
+            border-radius: 16px;
+            margin: 10px;
+        } 
+        
+        .box > .footer {
+            position: absolute;
+            background-color: whitesmoke;
+            bottom: 0px;
+            width: 100%;
+            text-align: center;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        } 
+        img {
+            display: block;
+            max-width: 180px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (max-width: 1024px) {
+            body{
+                font-size: 0.9em;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .column {
+                flex-basis: 33.33%;
+                font-size: 0.9em;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            body{
+                font-size: 0.9em;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .column {
+                flex-basis: 50%;
+                font-size: 0.9em;
+            }
+        }
+        @media screen and (max-width: 414px) {
+            body {
+                font-size: 0.9em;
+            }
+            h1 {
+                font-size: 1.7em;
+            }
+            .column {
+                flex-basis: 100%;
+                font-size: 0.9em;
+            }
+        }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Gallery</h1>
+        <div class="row">
+            <div class="column">
+                <div class="box">
+                    <img src="image.png" width="100%" alt="">
+                    <div class="footer"><p>Image Title</p></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img src="image.png" width="100%" alt="">
+                    <div class="footer"><p>Image Title</p></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img src="image.png" width="100%" alt="">
+                    <div class="footer"><p>Image Title</p></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img src="image.png" width="100%" alt="">
+                    <div class="footer"><p>Image Title</p></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img src="image.png" width="100%" alt="">
+                    <div class="footer"><p>Image Title</p></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img src="image.png" width="100%" alt="">
+                    <div class="footer"><p>Image Title</p></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img src="image.png" width="100%" alt="">
+                    <div class="footer"><p>Image Title</p></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img src="image.png" width="100%" alt="">
+                    <div class="footer"><p>Image Title</p></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img src="image.png" width="100%" alt="">
+                    <div class="footer"><p>Image Title</p></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img src="image.png" width="100%" alt="">
+                    <div class="footer"><p>Image Title</p></div>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        
+    </div>
+</body>
+</html>
